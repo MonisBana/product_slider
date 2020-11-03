@@ -1,0 +1,186 @@
+body {
+  font-family: "poppins";
+}
+#canvas {
+  background-color: #363630;
+  height: 630px;
+  width: 950px;
+  margin: auto;
+  position: relative;
+  border: 30px solid black;
+  top: 10%;
+}
+#img1 {
+  width: 391px;
+  height: 398px;
+  margin-top: 35%;
+  margin-left: 10%;
+}
+#img2 {
+  width: 391px;
+  height: 398px;
+  margin-top: 35%;
+  margin-left: 10%;
+}
+#closeBtn {
+  left: 90%;
+  top: 2%;
+  width: 20px;
+}
+.img-out {
+  animation-name: img-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  position: absolute;
+  animation-timing-function: linear;
+  opacity: 1;
+}
+.img-in {
+  animation-name: img-in;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  position: absolute;
+  animation-timing-function: linear;
+  opacity: 1;
+}
+@keyframes img-out {
+  100% {
+    opacity: 0.1;
+    width: 156px;
+    height: 158px;
+    /* transform: translate3d(300px, -60px, -100px); */
+    transform: translate3d(250px, -50px, -50px);
+  }
+}
+
+@keyframes img-in {
+  0% {
+    width: 600px;
+    height: 600px;
+    transform: translate3d(-200px, -100px, 0px);
+  }
+}
+
+@keyframes img-container {
+  0% {
+    background-color: #c7c7b6;
+  }
+  100% {
+    background-color: #bebdbb;
+  }
+}
+
+@keyframes text-in {
+  0% {
+    transform: translate3d(0px, -20px, 0px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-out {
+  100% {
+    transform: translate3d(0px, -20px, 0px);
+    opacity: 0.1;
+  }
+}
+.text-anim-in {
+  animation-name: text-in;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  position: relative;
+  animation-timing-function: linear;
+}
+.text-anim-out {
+  animation-name: text-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  position: relative;
+  animation-timing-function: ease-out;
+}
+.left-anim {
+  animation-name: img-container;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  position: absolute;
+  animation-timing-function: ease-in;
+}
+.left {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+
+  background-color: #c7c7b6;
+}
+.right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  background-color: #ffffff;
+}
+
+.Button {
+  color: #000000;
+  background-color: #fff;
+  position: relative;
+  opacity: 0.6;
+}
+.BlackBtns {
+  color: #ffffff;
+  background-color: #000000;
+  position: relative;
+  width: 45%;
+  border: none;
+  font-size: 10px;
+}
+
+.p {
+  font-size: 8px;
+  margin-block: 5px;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20%;
+  justify-content: space-evenly;
+}
+.actionBtns {
+  color: #000000;
+  padding: 0;
+  border: none;
+  background: none;
+  opacity: 0.5;
+  font-size: 12px;
+  outline: none;
+  margin-block: 5px;
+}
+.infoWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.btnsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 30px;
+  margin-top: 15%;
+}
+.subscribeBtn {
+  position: relative;
+  top: 43%;
+  background-image: linear-gradient(white, lightgrey);
+  border-radius: 10px;
+  width: 35%;
+  font-size: 10px;
+  padding: 3px;
+  opacity: 0.75;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="canvas">
+      <div class="left" id="A">
+        <img src="fab.png" id="img1" />
+      </div>
+      <div class="right">
+        <p class="Button p" id="closeBtn">CLOSE</p>
+        <div style="display: flex; flex-direction: row; margin-top: 20%">
+          <button
+            class="Button p"
+            style="
+              margin-inline: 15px;
+              padding: 0;
+              border: none;
+              background: none;
+            "
+          >
+            Previous
+          </button>
+          <div>
+            <p class="p">MARCH</p>
+            <h3 id="title">Fabulous Face Oil</h3>
+            <p class="p">NORMAL TO DRY SKIN</p>
+            <h5 id="price">$ 39.00</h5>
+            <p class="p">INGREDIENTS</p>
+            <p class="p">LAVENDER STEW,WHITE CLAY AND CAMOMILE</p>
+            <div>
+              <button>ADD TO CART</button>
+              <button>ADD TO SUBSCRIPTION</button>
+            </div>
+            <button>SUBSCIBE</button>
+            <p class="p">FOR EVERY MONTH KIT</p>
+          </div>
+          <button
+            class="Button p"
+            style="padding: 0; border: none; background: none"
+            onclick="nextImage()"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
